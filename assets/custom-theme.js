@@ -1,0 +1,3 @@
+jQuery(() => {
+  const $ = jQuery;
+})
