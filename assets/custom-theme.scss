@@ -1,0 +1,18 @@
+.absolute-top-wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  #top-frontpage-logo {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+}
+
+.header-bar {
+  margin-top: 100vh;
+}
