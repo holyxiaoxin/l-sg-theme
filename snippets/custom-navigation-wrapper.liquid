@@ -1,14 +1,21 @@
+{% comment %}
+Every product-type collections added here needs to be removed from index.liquid's collection
+!! Remember to remove navigation items from collections !!
+Collections that are ignored:
+t-shirt, longsleeves, headgears
+{% endcomment %}
+
 <div class="fixed-navigation-wrapper">
   <a href="/"><div class="nav-icons nav-home-icon">
     <span class="nav-labels">HOME</span>
   </div></a>
-  <a href="/collections/all"><div class="nav-icons nav-t-shirt-icon">
+  <a href="/collections/t-shirt"><div class="nav-icons nav-t-shirt-icon">
     <span class="nav-labels">T&#8209;SHIRT</span>
   </div></a>
-  <a href="/"><div class="nav-icons nav-longsleeves-icon">
+  <a href="/collections/longsleeves"><div class="nav-icons nav-longsleeves-icon">
     <span class="nav-labels">LONGSLEEVES</span>
   </div></a>
-  <a href="/"><div class="nav-icons nav-headgears-icon">
+  <a href="/collections/headgears"><div class="nav-icons nav-headgears-icon">
     <span class="nav-labels">HEADGEARS</span>
   </div></a>
   <a href="/"><div class="nav-icons nav-about-icon">

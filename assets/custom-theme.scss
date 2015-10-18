@@ -1,8 +1,11 @@
 $nav-color: #FFF;
 $nav-color-hover: #CC9C56;
 
+// theme.liquid
+
 body {
   background-image: url("localism-bg-2.png");
+  min-height: 100vh;
 }
 
 .fixed-top-wrapper {
@@ -27,7 +30,23 @@ body {
 
 }
 
+.cart-page-link {
+  font-size: 1.2em;
+  line-height: 0px;
+}
+
+.header-bar.offset-top-indexpage-image {
+  margin-top: 100vh;
+}
+
+.site-header, .header-bar, .site-footer {
+  background-color: transparent;
+}
+
+// custom-navigator-wrapper.liquid
+
 .fixed-navigation-wrapper {
+
   position: fixed;
   top: 240px;
   left: 40px;
@@ -35,7 +54,7 @@ body {
 
   a {
 
-    &:visited {
+    &:visited, &:link {
       color: $nav-color;
     }
 
@@ -84,16 +103,18 @@ body {
     }
   }
 
-
-
 }
 
-.header-bar.offset-top-indexpage-image {
-  margin-top: 100vh;
-}
+// collection.liquid
 
-.site-header, .header-bar, .site-footer {
-  background-color: transparent;
+.section-header.section-header--breadcrumb {
+
+  margin: 0;
+
+  .breadcrumb {
+    font-size: 1.1em;
+  }
+
 }
 
 
