@@ -22,3 +22,11 @@
 .header-bar.offset-top-indexpage-image {
   margin-top: 100vh;
 }
+
+body {
+  background-image: url("localism-bg-2.png");
+}
+
+.site-header, .header-bar, .site-footer {
+  background-color: transparent;
+}
