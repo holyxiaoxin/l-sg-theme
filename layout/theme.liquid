@@ -67,32 +67,7 @@
   </div>
   {% endif %}
 
-  <div class="fixed-navigation-wrapper">
-    <a href="/"><div class="nav-icons nav-home-icon">
-      <span class="nav-labels">HOME</span>
-    </div></a>
-    <a href="/"><div class="nav-icons nav-t-shirt-icon">
-      <span class="nav-labels">T&#8209;SHIRT</span>
-    </div></a>
-    <a href="/"><div class="nav-icons nav-longsleeves-icon">
-      <span class="nav-labels">LONGSLEEVES</span>
-    </div></a>
-    <a href="/"><div class="nav-icons nav-headgears-icon">
-      <span class="nav-labels">HEADGEARS</span>
-    </div></a>
-    <a href="/"><div class="nav-icons nav-about-icon">
-      <span class="nav-labels">ABOUT</span>
-    </div></a>
-    <a href="/"><div class="nav-icons nav-purchase-icon">
-      <span class="nav-labels">PURCHASE</span>
-    </div></a>
-    <a href="/"><div class="nav-icons nav-faq-icon">
-      <span class="nav-labels">FAQ</span>
-    </div></a>
-    <a href="/"><div class="nav-icons nav-contact-icon">
-      <span class="nav-labels">CONTACT</span>
-    </div></a>
-  </div>
+  {% include 'custom-navigation-wrapper' %}
 
   {% include 'header-bar' %}
 
@@ -308,7 +283,7 @@
 
       <div class="grid">
         <div class="grid__item text-center">
-          <p class="site-footer__links">{{ 'layout.footer.copyright' | t }} &copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }}. {{ powered_by_link }}</p>
+          <p class="site-footer__links">{{ 'layout.footer.copyright' | t }} &copy; {{ 'now' | date: "%Y" }} {{ shop.name | link_to: '/' }}. All Rights Reserved.</p>
         </div>
       </div>
 
