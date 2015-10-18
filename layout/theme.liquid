@@ -60,9 +60,13 @@
 
 <body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" >
 
+  {% if template == 'index' %}
   <div class="absolute-top-wrapper">
-    <img id="top-frontpage-logo" src="{{ 'localism-bg-3-flipped.png' | asset_url }}" alt="shop-background-drop" itemprop="logo">
+    <img id="top-frontpage-image" src="{{ 'localism-bg-3-flipped.png' | asset_url }}" alt="shop-background-drop">
+    <img id="top-frontpage-logo" src="{{ 'localism-logo-white.png' | asset_url }}" alt="shop-background-drop">
   </div>
+  {% endif %}
+
 
   {% include 'header-bar' %}
 
