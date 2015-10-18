@@ -24,10 +24,7 @@ Loop through each collection, except 'frontpage'
 
 <div class="grid-uniform">
   {% for collection in collections %}
-  {% comment %}
-  !! Remember to remove navigation items from collections !!
-  {% endcomment %}
-  {% if collection.handle != 'frontpage' and collection.handle != 't-shirt' and collection.handle != 'longsleeves' and collection.handle != 'headgears' and collection.handle != 'headgears' %}
+  {% if collection.handle != 'frontpage' %}
   {% assign featured = collection.handle %}
   {% assign collection_item_img_size = '1024x1024' %}
 
