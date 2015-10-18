@@ -1,8 +1,11 @@
 $nav-color: #FFF;
 $nav-color-hover: #CC9C56;
 
+// theme.liquid
+
 body {
   background-image: url("localism-bg-2.png");
+  min-height: 100vh;
 }
 
 .fixed-top-wrapper {
@@ -40,6 +43,8 @@ body {
   background-color: transparent;
 }
 
+// custom-navigator-wrapper.liquid
+
 .fixed-navigation-wrapper {
 
   position: fixed;
@@ -49,7 +54,7 @@ body {
 
   a {
 
-    &:visited {
+    &:visited, &:link {
       color: $nav-color;
     }
 
@@ -96,6 +101,18 @@ body {
     .nav-contact-icon {
       background: url('icon-sprite.png') 0 -352px no-repeat;
     }
+  }
+
+}
+
+// collection.liquid
+
+.section-header.section-header--breadcrumb {
+
+  margin: 0;
+
+  .breadcrumb {
+    font-size: 1.1em;
   }
 
 }
