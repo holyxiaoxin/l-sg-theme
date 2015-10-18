@@ -1,4 +1,12 @@
-.absolute-top-wrapper{
+$nav-color: #FFF;
+$nav-color-hover: #CC9C56;
+
+body {
+  background-image: url("localism-bg-2.png");
+}
+
+.fixed-top-wrapper {
+
   position: fixed;
   top: 0;
   left: 0;
@@ -13,18 +21,75 @@
 
   #top-frontpage-logo {
     position: absolute;
-    top: 6vh;
-    left: 4vh;
+    top: 50px;
+    left: 40px;
   }
+
+}
+
+.fixed-navigation-wrapper {
+  position: fixed;
+  top: 240px;
+  left: 40px;
+  color: $nav-color;
+
+  a {
+
+    &:visited {
+      color: $nav-color;
+    }
+
+    &:hover {
+      color: $nav-color-hover;
+    }
+
+    .nav-icons {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      margin-bottom: 10px;
+      padding-left: 50px;
+    }
+
+    .nav-home-icon {
+      background: url('icon-sprite.png') 0 0 no-repeat;
+    }
+
+    .nav-t-shirt-icon {
+      background: url('icon-sprite.png') 0 -40px no-repeat;
+    }
+
+    .nav-longsleeves-icon {
+      background: url('icon-sprite.png') 0 -90px no-repeat;
+    }
+
+    .nav-headgears-icon {
+      background: url('icon-sprite.png') 0 -142px no-repeat;
+    }
+
+    .nav-about-icon {
+      background: url('icon-sprite.png') 0 -196px no-repeat;
+    }
+
+    .nav-purchase-icon {
+      background: url('icon-sprite.png') 0 -250px no-repeat;
+    }
+
+    .nav-faq-icon {
+      background: url('icon-sprite.png') 0 -304px no-repeat;
+    }
+
+    .nav-contact-icon {
+      background: url('icon-sprite.png') 0 -352px no-repeat;
+    }
+  }
+
+
 
 }
 
 .header-bar.offset-top-indexpage-image {
   margin-top: 100vh;
-}
-
-body {
-  background-image: url("localism-bg-2.png");
 }
 
 .site-header, .header-bar, .site-footer {
