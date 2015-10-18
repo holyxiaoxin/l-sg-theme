@@ -62,7 +62,7 @@
 
   {% if template == 'index' %}
   <div class="fixed-top-wrapper">
-    <img id="top-frontpage-image" src="{{ 'localism-bg-3-flipped.png' | asset_url }}" alt="shop-background-drop">
+    <img id="top-frontpage-image" src="{{ 'localism-bg-3-flipped-cropped.png' | asset_url }}" alt="shop-background-drop">
     <img id="top-frontpage-logo" src="{{ 'localism-logo-white.png' | asset_url }}" alt="shop-background-drop">
   </div>
   {% endif %}
@@ -168,7 +168,9 @@
 
         {% if settings.footer_social_enable %}
         <div class="grid__item {{ footer_column_width }}">
+          {% comment %}
           <h4>{{ 'layout.footer.social_title' | t }}</h4>
+          {% endcomment %}
           {% comment %}
           Loop through the social network links
           {% endcomment %}
