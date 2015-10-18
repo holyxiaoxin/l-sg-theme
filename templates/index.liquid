@@ -1,18 +1,53 @@
 {% if settings.home_section_1 != blank %}
-  {% include settings.home_section_1 %}
+{% include settings.home_section_1 %}
 {% endif %}
 
 {% if settings.home_section_2 != blank %}
-  <hr class="hr--small hr--clear">
-  {% include settings.home_section_2 %}
+<hr class="hr--small hr--clear">
+{% include settings.home_section_2 %}
 {% endif %}
 
 {% if settings.home_section_3 != blank %}
-  <hr class="hr--small hr--clear">
-  {% include settings.home_section_3 %}
+<hr class="hr--small hr--clear">
+{% include settings.home_section_3 %}
 {% endif %}
 
 {% if settings.home_section_4 != blank %}
-  <hr class="hr--small hr--clear">
-  {% include settings.home_section_4 %}
+<hr class="hr--small hr--clear">
+{% include settings.home_section_4 %}
 {% endif %}
+
+
+{% comment %}
+Loop through each collection, except 'frontpage'
+{% endcomment %}
+
+
+<div class="grid-uniform">
+  {% for collection in collections %}
+  {% unless collection.handle == 'frontpage' %}
+  {% assign featured = collection.handle %}
+  {% assign collection_item_img_size = '1024x1024' %}
+
+  <div class="grid__item text-center">
+    {% capture collection_title %}{{ collections[featured].title | escape }}{% endcapture %}
+
+    <a href="{{ collections[featured].url }}" title="{{ 'collections.general.link_title' | t: title: collection_title }}" class="grid-link text-center">
+      <span class="grid-link__image grid-link__image--collection">
+        <span class="grid-link__image-centered">
+          {% if collections[featured].image %}
+          {{ collections[featured].image.src | img_url: collection_item_img_size | img_tag: collection_title }}
+          {% else %}
+          {{ collections[featured].products.first.featured_image | img_url: collection_item_img_size | img_tag: collection_title }}
+          {% endif %}
+        </span>
+      </span>
+    </a>
+
+  </div>
+
+
+
+  {% endunless %}
+  {% endfor %}
+</div>

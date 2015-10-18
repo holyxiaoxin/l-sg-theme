@@ -27,7 +27,21 @@ body {
 
 }
 
+.cart-page-link {
+  font-size: 1.2em;
+  line-height: 0px;
+}
+
+.header-bar.offset-top-indexpage-image {
+  margin-top: 100vh;
+}
+
+.site-header, .header-bar, .site-footer {
+  background-color: transparent;
+}
+
 .fixed-navigation-wrapper {
+
   position: fixed;
   top: 240px;
   left: 40px;
@@ -84,14 +98,4 @@ body {
     }
   }
 
-
-
-}
-
-.header-bar.offset-top-indexpage-image {
-  margin-top: 100vh;
-}
-
-.site-header, .header-bar, .site-footer {
-  background-color: transparent;
 }
