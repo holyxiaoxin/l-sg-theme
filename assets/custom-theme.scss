@@ -2,6 +2,8 @@ $nav-color: #FFF;
 $nav-color-hover: #CC9C56;
 // lightbox
 $lightbox-button-color: #B5B4B4;
+// product
+$product-add-cart-button-border-pixel: 3px;
 
 // theme.liquid
 
@@ -138,4 +140,34 @@ body {
 
 button.mfp-close {
   color: $lightbox-button-color;
+}
+
+// product.liquid
+.product-single {
+
+  h1 {
+    border-bottom: 3px solid;
+    padding-bottom: 20px;
+  }
+
+  .product-single__price {
+    color: inherit;
+    font-size: 32px;
+  }
+
+  button {
+    font-weight: bold;
+    padding: 12px 10px;
+    border: $product-add-cart-button-border-pixel solid;
+    border-radius: 0;
+    background-color: transparent;
+
+    &:hover {
+      border: $product-add-cart-button-border-pixel solid #CCC;
+      background: #EEE;
+      background: rgba(#EEE, 0.8);
+    }
+
+  }
+
 }
