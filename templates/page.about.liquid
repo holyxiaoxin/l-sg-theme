@@ -2,8 +2,11 @@
   <div class="grid__item large--one-half text-center">
     {{ 'localism-badge.png' | asset_url | img_tag }}
   </div>
-  <div class="grid__item large--one-half text-center">
-
+  <div class="grid__item large--one-half text-left">
+    <div class="section-header text-left">
+      <h1 class="contact-page-content section-header--title">{{ page.title }}</h1>
+    </div>
+    <div class="custom-divider-div"></div>
     <div class="rte">
       <span class="contact-page-content">{{ page.content }}
     </div>

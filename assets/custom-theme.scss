@@ -13,6 +13,7 @@ body {
   min-height: 100vh;
 }
 
+
 .fixed-top-wrapper {
 
   position: fixed;
@@ -170,4 +171,18 @@ button.mfp-close {
 
   }
 
+}
+
+.custom-divider-div {
+  width: 60%;
+  height: 10px;
+  border-style: solid;
+  border-width: 3px;
+  margin-bottom: 20px;
+}
+
+.cart__row {
+  a {
+    color: white;
+  }
 }
