@@ -1,5 +1,7 @@
 $nav-color: #FFF;
 $nav-color-hover: #CC9C56;
+// lightbox
+$lightbox-button-color: #B5B4B4;
 
 // theme.liquid
 
@@ -123,8 +125,17 @@ body {
 
 }
 
-
-
 .contact-page-content {
   color: white;
+}
+
+
+// assets.theme.js.liquid
+
+.mfp-chevron {
+  color: $lightbox-button-color;
+}
+
+button.mfp-close {
+  color: $lightbox-button-color;
 }
