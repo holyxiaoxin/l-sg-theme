@@ -35,7 +35,7 @@
   {{ 'timber.scss.css' | asset_url | stylesheet_tag }}
   {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
   {{ 'custom-theme.scss.css' | asset_url | stylesheet_tag }}
-
+  {{ 'custom-fonts.scss.css' | asset_url | stylesheet_tag }}
 
   {% include 'google-fonts' %}
 
@@ -55,6 +55,14 @@
   {% endif %}
 
   {{ 'custom-theme.js' | asset_url | script_tag }}
+
+  {% if settings.header_font == "Chewy, arial, sans-serif" %}
+
+    <link href='http://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+
+  {% elsif settings.header_font == "Copse, arial, sans-serif" %}
+
+{% endif %}
 
 </head>
 
