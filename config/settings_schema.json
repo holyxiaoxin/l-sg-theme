@@ -79,6 +79,31 @@
         "label": "Font",
         "options": [
           {
+            "value": "hiragino_kaku_gothic_stdw8",
+            "label": "Hiragino Kaku Gothic",
+            "group": "Theme Custom"
+          },
+          {
+            "value": "din_alternate_blackregular",
+            "label": "Din Alternate Black Regular",
+            "group": "Theme Custom"
+          },
+          {
+            "value": "din_alternatebold",
+            "label": "Din Alternate Bold",
+            "group": "Theme Custom"
+          },
+          {
+            "value": "din_alternate_lightregular",
+            "label": "Din Alternate Light Regular",
+            "group": "Theme Custom"
+          },
+          {
+            "value": "din_alternate_mediumregular",
+            "label": "Din Alternate Medium Regular",
+            "group": "Theme Custom"
+          },
+          {
             "value": "'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, 'AppleGothic', sans-serif",
             "label": "Avant Garde",
             "group": "Sans-serif"
@@ -274,6 +299,31 @@
         "id": "type_header_family",
         "label": "Font",
         "options": [
+          {
+            "value": "hiragino_kaku_gothic_stdw8",
+            "label": "Hiragino Kaku Gothic",
+            "group": "Theme Custom"
+          },
+          {
+            "value": "din_alternate_blackregular",
+            "label": "Din Alternate Black Regular",
+            "group": "Theme Custom"
+          },
+          {
+            "value": "din_alternatebold",
+            "label": "Din Alternate Bold",
+            "group": "Theme Custom"
+          },
+          {
+            "value": "din_alternate_lightregular",
+            "label": "Din Alternate Light Regular",
+            "group": "Theme Custom"
+          },
+          {
+            "value": "din_alternate_mediumregular",
+            "label": "Din Alternate Medium Regular",
+            "group": "Theme Custom"
+          },
           {
             "value": "'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, 'AppleGothic', sans-serif",
             "label": "Avant Garde",
@@ -607,6 +657,31 @@
         "id": "type_accent_family",
         "label": "Font",
         "options": [
+          {
+            "value": "hiragino_kaku_gothic_stdw8",
+            "label": "Hiragino Kaku Gothic",
+            "group": "Theme Custom"
+          },
+          {
+            "value": "din_alternate_blackregular",
+            "label": "Din Alternate Black Regular",
+            "group": "Theme Custom"
+          },
+          {
+            "value": "din_alternatebold",
+            "label": "Din Alternate Bold",
+            "group": "Theme Custom"
+          },
+          {
+            "value": "din_alternate_lightregular",
+            "label": "Din Alternate Light Regular",
+            "group": "Theme Custom"
+          },
+          {
+            "value": "din_alternate_mediumregular",
+            "label": "Din Alternate Medium Regular",
+            "group": "Theme Custom"
+          },
           {
             "value": "'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, 'AppleGothic', sans-serif",
             "label": "Avant Garde",
