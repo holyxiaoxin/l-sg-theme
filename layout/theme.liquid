@@ -63,7 +63,7 @@
   {% elsif settings.header_font == "Copse, arial, sans-serif" %}
 
 {% endif %}
-
+  <link rel="shortcut icon" href="{{ 'favicon.ico' | asset_url }}" type="image/png" />
 </head>
 
 <body style="display: none;" id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" >
