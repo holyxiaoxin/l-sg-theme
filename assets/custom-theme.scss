@@ -173,6 +173,16 @@ button.mfp-close {
 
   }
 
+  #ProductThumbs {
+    margin-top: 50px;
+    overflow-y: scroll;
+    white-space: nowrap;
+    a {
+      margin: 0 30px;
+      display: inline;
+    }
+  }
+
 }
 
 .custom-divider-div {
