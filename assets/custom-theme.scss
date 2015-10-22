@@ -57,9 +57,10 @@ body {
 // custom-navigator-wrapper.liquid
 
 .fixed-navigation-wrapper {
+
   position: fixed;
   width: 180px;
-  top: 35vh;
+  top: 45vh;
   left: 40px;
   color: $nav-color;
   z-index: 1;
@@ -145,7 +146,7 @@ button.mfp-close {
 }
 
 // product.liquid
-.product-single {
+.product-single__hero {
 
   h1 {
     border-bottom: 3px solid;
@@ -170,16 +171,6 @@ button.mfp-close {
       background: rgba(#EEE, 0.8);
     }
 
-  }
-
-  #ProductThumbs {
-    margin-top: 50px;
-    overflow-y: scroll;
-    white-space: nowrap;
-    a {
-      margin: 0 30px;
-      display: inline;
-    }
   }
 
 }
@@ -208,4 +199,13 @@ button.mfp-close {
   &.icon-instagram {
     color: #9E6F4F;
   }
+}
+
+#ProductThumbs .item{
+  margin: 3px;
+}
+#ProductThumbs .item img{
+  display: block;
+  width: 100%;
+  height: auto;
 }

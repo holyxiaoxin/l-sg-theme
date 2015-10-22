@@ -32,11 +32,8 @@ jQuery(function() {
   }
 
   $(window).resize(function(){
-
     $('.fixed-navigation-wrapper').css({
-        top: ($(window).height() - $('.fixed-navigation-wrapper').outerHeight())/2
+        top: ($(window).height() - $('.className').outerHeight())/2
     });
-
-});
-
+  });
 })

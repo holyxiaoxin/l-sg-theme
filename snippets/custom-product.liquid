@@ -101,43 +101,15 @@
 
       </div>
     </div>
-
-
-    <!-- Start of Multiple product images with overflow change request -->
-    {% if settings.product_thumbnails_position == 'below' or product.images.size < 2 %}
-      {% if product.images.size > 1 %}
-
-      <div id="ProductThumbs">
-        {% for image in product.images %}
-            <a data-image-id="{{ image.id }}" href="{{ image.src | img_url: '1024x1024' }}" class="product-single__thumbnail">
-              <img src="{{ image.src | img_url: 'medium' }}" alt="{{ image.alt | escape }}">
-            </a>
-        {% endfor %}
-      </div>
-
-      {% endif %}
-    {% else %}
-
-      <div class="grid__item one-fifth">
-
-        <ul class="grid product-single__thumbnails" id="ProductThumbs">
-          {% for image in product.images %}
-            <li class="grid__item">
-              <a data-image-id="{{ image.id }}" href="{{ image.src | img_url: '1024x1024' }}" class="product-single__thumbnail">
-                <img src="{{ image.src | img_url: 'medium' }}" alt="{{ image.alt | escape }}">
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-
-      </div>
-
-    {% endif %}
-    <!-- End of  -->
-
-
-
-
+    <div id="ProductThumbs">
+      {% for image in product.images %}
+      <div class="item">
+          <a data-image-id="{{ image.id }}" href="{{ image.src | img_url: '1024x1024' }}" class="product-single__thumbnail">
+            <img src="{{ image.src | img_url: 'medium' }}" alt="{{ image.alt | escape }}">
+          </a>
+        </div>
+      {% endfor %}
+    </div>
 
   </div>
 
@@ -178,5 +150,15 @@
     {% if product.variants.size == 1 and product.variants.first.title contains 'Default' %}
       $('.selector-wrapper').hide();
     {% endif %}
+  });
+
+  $("#ProductThumbs").owlCarousel({
+
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+      items : 4,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+
   });
 </script>
