@@ -8,7 +8,7 @@ $product-add-cart-button-border-pixel: 3px;
 // theme.liquid
 
 body {
-  background-image: url("localism-bg-2.png");
+  background-image: url("localism-bg-8.png");
   background-size: cover;
   min-height: 100vh;
 }
@@ -29,7 +29,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100vh;
-    background-image: url("localism-bg-3-flipped-cropped.png");
+    background-image: url("final-bg.png");
     background-size: cover;
   }
 
@@ -57,10 +57,9 @@ body {
 // custom-navigator-wrapper.liquid
 
 .fixed-navigation-wrapper {
-
   position: fixed;
   width: 180px;
-  top: 240px;
+  top: 35vh;
   left: 40px;
   color: $nav-color;
   z-index: 1;
@@ -196,5 +195,17 @@ button.mfp-close {
 .cart__row {
   a {
     color: white;
+  }
+}
+
+.social-icons li .icon {
+  &.icon-twitter {
+    color: #55ACEE;
+  }
+  &.icon-facebook {
+    color: #3b5998;
+  }
+  &.icon-instagram {
+    color: #9E6F4F;
   }
 }

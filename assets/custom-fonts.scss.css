@@ -48,11 +48,7 @@
          url('din_alternate_medium-webfont.svg#din_alternate_mediumregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'hiragino_kaku_gothic_stdw8';
@@ -64,5 +60,15 @@
          url('_std_w8-webfont.svg#hiragino_kaku_gothic_stdw8') format('svg');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'newsflash_bbregular';
+    src: url('newsflashbb-webfont.eot');
+    src: url('newsflashbb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('newsflashbb-webfont.woff') format('woff'),
+         url('newsflashbb-webfont.ttf') format('truetype'),
+         url('newsflashbb-webfont.svg#newsflash_bbregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
