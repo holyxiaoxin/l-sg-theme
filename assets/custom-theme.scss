@@ -76,7 +76,7 @@ body {
 
   position: fixed;
   width: 180px;
-  top: 45vh;
+  top: 25vh;
   left: 40px;
   color: $nav-color;
   z-index: 1;
@@ -208,12 +208,21 @@ button.mfp-close {
 .social-icons li .icon {
   &.icon-twitter {
     color: #55ACEE;
+    &:hover {
+      opacity: 0.9;
+    }
   }
   &.icon-facebook {
     color: #3b5998;
+    &:hover {
+      opacity: 0.9;
+    }
   }
   &.icon-instagram {
     color: #9E6F4F;
+    &:hover {
+      opacity: 0.9;
+    }
   }
 }
 

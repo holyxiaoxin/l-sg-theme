@@ -33,7 +33,7 @@ jQuery(function() {
 
   $(window).resize(function(){
     $('.fixed-navigation-wrapper').css({
-        top: ($(window).height() - $('.className').outerHeight())/2
+        top: ($(window).height() - $('.fixed-navigation-wrapper').outerHeight())/2
     });
   });
 
@@ -42,4 +42,27 @@ jQuery(function() {
         scrollTop: $(".header-bar").offset().top},
         'slow');
   });
+
+  // delegate all clicks on "a" tag (links)
+$(document).on("click", "a", function () {
+
+    // get the href attribute
+    var newUrl = $(this).attr("href");
+
+    // veryfy if the new url exists or is a hash
+    if (!newUrl || newUrl[0] === "#") {
+        // set that hash
+        location.hash = newUrl;
+        return;
+    }
+
+    // now, fadeout the html (whole page)
+    $("html").fadeOut(function () {
+        // when the animation is complete, set the new location
+        location = newUrl;
+    });
+
+    // prevent the default browser behavior.
+    return false;
+});
 })

@@ -93,7 +93,7 @@
   </div>
   {% endif %}
 
-  {% include 'custom-navigation-wrapper' %}
+
 
   {% include 'header-bar' %}
 
@@ -103,7 +103,12 @@
   <main class="wrapper main-content" role="main">
     <div class="grid">
       <div class="grid__item">
-        {{ content_for_layout }}
+        <div class="grid__item large--one-twelfth">
+          {% include 'custom-navigation-wrapper' %}
+        </div>
+        <div class="grid__item large--ten-twelfths">
+          {{ content_for_layout }}
+        </div>
       </div>
     </div>
   </main>
