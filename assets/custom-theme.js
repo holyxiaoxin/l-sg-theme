@@ -36,4 +36,10 @@ jQuery(function() {
         top: ($(window).height() - $('.className').outerHeight())/2
     });
   });
+
+  $("#center-div-logo").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".header-bar").offset().top},
+        'slow');
+  });
 })
