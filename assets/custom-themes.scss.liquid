@@ -8,7 +8,7 @@ $product-add-cart-button-border-pixel: 3px;
 // theme.liquid
 
 body {
-  background-image: url("localism-bg-8.png");
+  background-image: url("localism-bg-brick.png");
   background-size: cover;
   min-height: 100vh;
 }
@@ -16,19 +16,32 @@ body {
 #center-div-logo {
   vertical-align: middle;
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 366px;
+  height: 172px;
   position: absolute;
   top: 0;
   bottom:0;
   left: 0;
   right:0;
   margin: auto;
-  background: url("localism-logo-sprite.png") 0 0 no-repeat;
+  background: url({{'final-localism-logo.png' | asset_url}});;
+  background-size: cover;
 }
 
-#center-div-logo:hover {
-    display:none;
+#center-div-logo-mobile {
+  vertical-align: middle;
+  display: inline-block;
+  width: 311px;
+  height: 146px;
+  position: absolute;
+  top: 0;
+  bottom:0;
+  left: 0;
+  right:0;
+  margin: auto;
+  background: url({{'final-localism-logo.png' | asset_url}});;
+  background-size: cover;
+  display:none;
 }
 
 .fixed-top-wrapper {
@@ -100,35 +113,43 @@ body {
     }
 
     .nav-home-icon {
-      background: url('icon-sprite.png') 0 0 no-repeat;
+      background: url('new-icons.png') 0 0 no-repeat;
     }
 
     .nav-t-shirt-icon {
-      background: url('icon-sprite.png') 0 -40px no-repeat;
+      background: url('new-icons.png') 0 -45px no-repeat;
     }
 
     .nav-longsleeves-icon {
-      background: url('icon-sprite.png') 0 -90px no-repeat;
+      background: url('new-icons.png') 0 -90px no-repeat;
     }
 
     .nav-headgears-icon {
-      background: url('icon-sprite.png') 1px -142px no-repeat;
+      background: url('new-icons.png') 0px -135px no-repeat;
     }
 
     .nav-about-icon {
-      background: url('icon-sprite.png') 3px -196px no-repeat;
+      background: url('new-icons.png') 0px -180px no-repeat;
     }
 
     .nav-purchase-icon {
-      background: url('icon-sprite.png') 1px -250px no-repeat;
+      background: url('new-icons.png') 0px -225px no-repeat;
     }
 
     .nav-faq-icon {
-      background: url('icon-sprite.png') 7px -302px no-repeat;
+      background: url('new-icons.png') 0px -270px no-repeat;
     }
 
     .nav-contact-icon {
-      background: url('icon-sprite.png') 0 -352px no-repeat;
+      background: url('new-icons.png') 0 -315px no-repeat;
+    }
+
+    .nav-bottoms-icon {
+      background: url('new-icons.png') 0 -360px no-repeat;
+    }
+
+    .nav-footwear-icon {
+      background: url('new-icons.png') 0 -405px no-repeat;
     }
   }
 
@@ -192,7 +213,7 @@ button.mfp-close {
 }
 
 .custom-divider-div {
-  width: 60%;
+  width: 70%;
   height: 10px;
   border-style: solid;
   border-width: 3px;
@@ -201,7 +222,11 @@ button.mfp-close {
 
 .cart__row {
   a {
-    color: white;
+    color: #CC9C56;
+    & h5 {
+      color:white;
+      font-size: 22px;
+    }
   }
 }
 
@@ -231,6 +256,28 @@ button.mfp-close {
 }
 #ProductThumbs .item img{
   display: block;
-  width: 100%;
   height: auto;
+}
+
+.header-bar a, .header-bar button {
+    &:hover {
+      color: #CC9C56;
+    }
+}
+
+.shopping-cart-section {
+  display: inline-block;
+  .shopping-cart-icon {
+    height: 34px;
+    width: 40px;
+    background: url("shopping-cart-sprite-final.png") 0 0 no-repeat;
+  }
+  &:hover {
+    .shopping-cart-icon {
+      background: url("shopping-cart-sprite-final.png") 0 -34 no-repeat;
+    }
+    .cart-page-link {
+      color: #CC9C56;
+    }
+  }
 }

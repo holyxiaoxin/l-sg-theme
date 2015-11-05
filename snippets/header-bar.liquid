@@ -57,19 +57,21 @@
           </ul>
         {% endif %}
 
-        <div class="header-bar__module">
-          <span class="header-bar__sep" aria-hidden="true"></span>
-          <a href="/cart" class="cart-page-link">
-            <!-- <span class="icon icon-cart header-bar__cart-icon" aria-hidden="true"></span> -->
-            <img id="shopping-cart-icon" width=40px src="{{ 'shopping-cart.png' | asset_url }}" alt="shopping-cart">
-          </a>
-        </div>
+        <div class="shopping-cart-section">
+          <div class="header-bar__module">
+            <span class="header-bar__sep" aria-hidden="true"></span>
+            <a href="/cart" class="cart-page-link">
+              <!-- <span class="icon icon-cart header-bar__cart-icon" aria-hidden="true"></span> -->
+              <div class="shopping-cart-icon"></div>
+            </a>
+          </div>
 
-        <div class="header-bar__module">
-          <a href="/cart" class="cart-page-link">
-            {{ 'layout.cart.title' | t }}<span {% if cart.item_count == 0 %}class="hidden-count"{% endif %}>:</span>
-            <span class="cart-count header-bar__cart-count{% if cart.item_count == 0 %} hidden-count{% endif %}">{{ cart.item_count }}</span>
-          </a>
+          <div class="header-bar__module">
+            <a href="/cart" class="cart-page-link">
+              {{ 'layout.cart.title' | t }}<span {% if cart.item_count == 0 %}class="hidden-count"{% endif %}>:</span>
+              <span class="cart-count header-bar__cart-count{% if cart.item_count == 0 %} hidden-count{% endif %}">{{ cart.item_count }}</span>
+            </a>
+          </div>
         </div>
 
         {% if settings.header_search_enable %}

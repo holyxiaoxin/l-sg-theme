@@ -23,7 +23,8 @@ Loop through each collection, except 'frontpage'
 {% endcomment %}
 <div id="at-index-page"></div>
 <div class="grid-uniform">
-  {% for collection in collections %}
+  {% assign sorted_collections = collections | sort: 'id' %}
+  {% for collection in sorted_collections %}
   {% if collection.handle != 'frontpage' %}
   {% assign featured = collection.handle %}
   {% assign collection_item_img_size = '1024x1024' %}

@@ -34,7 +34,7 @@
   <!-- CSS ================================================== -->
   {{ 'timber.scss.css' | asset_url | stylesheet_tag }}
   {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
-  {{ 'custom-theme.scss.css' | asset_url | stylesheet_tag }}
+  {{ 'custom-themes.scss.css' | asset_url | stylesheet_tag }}
   {{ 'custom-fonts.scss.css' | asset_url | stylesheet_tag }}
 
   {% include 'google-fonts' %}
@@ -72,19 +72,10 @@
 
   {% if template == 'index' %}
   <div class="fixed-top-wrapper">
-    <div id="center-div-logo" style="
-    vertical-align: middle;
-    display: inline-block;
-    width: 366px;
-    height: 172px;
-    position: absolute;
-    top: 0;
-    bottom:0;
-    left: 0;
-    right:0;
-    margin: auto;
-    background: url({{ 'localism-logo-sprite.png' | asset_url }}) 0 0 no-repeat;
-" onmouseover="this.style.opacity=0.8;this.style.cursor='pointer';" onmouseout="this.style.opacity=1;this.style.cursor='auto';"></div>
+    <div id="center-div-logo" class="small--hide" onmouseover="this.style.opacity=0.8;this.style.cursor='pointer';" onmouseout="this.style.opacity=1;this.style.cursor='auto';">
+    </div>
+    <div id="center-div-logo-mobile" class="small--show" onmouseover="this.style.opacity=0.8;this.style.cursor='pointer';" onmouseout="this.style.opacity=1;this.style.cursor='auto';">
+    </div>
 
     {% comment %}
     <img id="top-frontpage-logo" src="{{ 'localism-logo-white.png' | asset_url }}" alt="shop-background-drop">
