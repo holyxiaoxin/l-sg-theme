@@ -37,6 +37,12 @@ jQuery(function() {
     });
   });
 
+  $(document).ready(function() {
+    $('.fixed-navigation-wrapper').css({
+        top: ($(window).height() - $('.fixed-navigation-wrapper').outerHeight())/2
+    });
+  });
+
   $("#center-div-logo").click(function() {
     $('html,body').animate({
         scrollTop: $(".header-bar").offset().top},
